@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles-home.css">
+    <link rel="stylesheet" href="../styles/subir.css"">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/pixelarticons/css/pixelarticons.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="light">
+    <header>
+        <div class="topbar">
+            <p>¡Bienvenidos/as a Guifos.com! ------Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </div>
+        <nav id="navbar-gif">
+            <div id="logo-gif">
+                <a href="../index.html" id="flecha-link">
+                    <img src="../fotos/arrow.svg"  alt="flecha para ir a otra pagina" id="flecha-icon">
+                </a>
+                <img src="../fotos/gifOF_logo.png" alt="logo gif.os" id="logo">
+            </div>
+        
+
+        </nav>
+    </header>
+    <main>
+        <section id="info-crear">
+            <div id="caja-instrucciones">
+                <div class="topbar">
+                    <p>Crear Guifos</p>
+                </div>
+                <div id="texto">
+                    <div class="titulo-img">
+                        <img src="../fotos/window-img.png" alt="window">
+                        <h4>Aquí podrás crear tus propios guifos</h4>
+                    </div>
+                    
+                    <p id="Informativo">Crear tu <span>guifo</span> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
+                    <ol>
+                        <li><span>1)</span> Dar permisos de acceso a la cámara (solo por el tiempo de uso)</li>
+						<li><span>2)</span> Capturar tu momento guifo</li>
+						<li><span>3)</span> Revisar el momento</li>
+						<li><span>4)</span> Listo para subir y compartir!</li>
+                    </ol>
+                    <p>¿Quieres comenzar a crear tu <span>guifo</span> ahora?</p>
+                    <div id="botones-crear">
+                        <button class="boton-cancelar">Cancelar</button>
+                        <button class="boton-comenzar">Comenzar</button>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div id="grabacion-container" class="oculto">
+                <video id="preview" autoplay muted playsinline></video>
+                <br>
+                <button id="grabarBtn" class="oculto">Grabar</button>
+                <button id="stopBtn" class="oculto">Listo</button>
+            </div>
+            <div id="acciones-finales" class="oculto acciones-finales">
+                <img id="miniatura-video" alt="Miniatura del video" class="miniatura oculto">
+                <video id="preview-final" class="preview-final oculto" controls autoplay loop></video>
+                <button id="repetirBtn">Repetir</button>
+                <button id="subirBtn">Subir</button>
+            </div>
+        </section>
+        <section id="misguifos">
+            <div class="titulos-seccion">
+                <h5>Mis Guifos</h5>
+            </div>
+            <div id="galeria-guifos" class="galeria-guifos"></div>
+        </section>
+    </main>
+    <script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
+    <script src="/scripts/subir.js"></script>
+</body>
+</html>
+

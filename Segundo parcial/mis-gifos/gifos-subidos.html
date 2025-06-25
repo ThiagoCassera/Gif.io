@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles-home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/pixelarticons/css/pixelarticons.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="light">
+    <header>
+        <div class="topbar">
+            <p>¡Bienvenidos/as a Guifos.com! ------Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </div>
+        <nav id="navbar-gif">
+            <div id="logo-gif">
+                <a href="../index.html" id="flecha-link">
+                    <img src="../fotos/arrow.svg"  alt="flecha para ir a otra pagina" id="flecha-icon">
+                </a>
+                <img src="../fotos/gifOF_logo.png" alt="logo gif.os" id="logo">
+            </div>
+            <div id="botones-nav">
+                <button class="botones-up" id="crear">Crear Guifos</button>
+                <div id="dropdown">
+                    <button id="dropdownBtn" aria-haspopup="true" aria-expanded="false" >
+                        <span id="boton-tema" class="boton2">Elegir tema</span>
+                        <span id="boton-flecha"  class="boton2"> <img src="../fotos/dropdown.svg" alt="foto flecha drop"></span>
+                    </button>
+                    <div id="dropdownMenu" role="menu" aria-labelledby="dropdownBtn">
+                        <div class="dropdown-item" role="menuitem" id="light">Sailor Light</div>
+                        <div class="dropdown-item" role="menuitem" id="night">Sailor Night</div>
+                        
+                    </div>
+                </div>
+                <div id="link-my-gifs">
+                    <a href="subir-gifos/mis-gifos.html">Mis Gifos</a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section id="misguifos">
+            <div class="titulos-seccion">
+                <h5>Mis Guifos</h5>
+            </div>
+        </section>
+    </main>
+    <script src="../scripts/temas.js"></script>
+    <script src="../scripts/link.js"></script>
+</body>
+</html>

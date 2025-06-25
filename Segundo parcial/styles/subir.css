@@ -1,0 +1,75 @@
+/* Clases para ocultar o mostrar */
+.oculto {
+  display: none !important;
+}
+
+.visible-inline {
+  display: inline-block !important;
+}
+
+.visible-block {
+  display: block !important;
+}
+
+/* Estilo para video en la galería */
+.preview-video {
+  width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+#preview {
+  width: 640px;      /* o el tamaño que prefieras */
+  height: 480px;
+  background-color: black; /* para que se vea el contenedor aunque no haya imagen */
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;    /* asegurarte que esté visible cuando no tenga 'oculto' */
+}
+/* Contenedor de cada guifo */
+.contenedor-guifo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* Botón de eliminar */
+.boton-eliminar {
+  display: block;
+  margin-top: 5px;
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boton-eliminar:hover {
+  background-color: #e04b4b;
+}
+
+
+
+.acciones-finales {
+    margin-top: 10px;
+}
+
+.miniatura {
+    max-width: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.preview-final {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.galeria-guifos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
